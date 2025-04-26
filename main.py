@@ -30,7 +30,7 @@ def get_chat_block():
                 with gr.Accordion(label="召回文本段",open=False):
                     chunk_text = gr.Textbox(label="召回文本段",interactive=False,scale=5,lines=10)
                 with gr.Accordion(label="模型设置",open=True):
-                    model =gr.Dropdown(choices=['qwen-max','qwen-plus','qwen-turbo'],label="选择模型",interactive=True,value="qwen-max",scale=2)
+                    model =gr.Dropdown(choices=['deepseek-chat'],label="选择模型",interactive=True,value="deepseek-chat",scale=2)
                     temperature = gr.Slider(maximum=2,minimum=0,interactive=True,label="温度参数",step=0.01,value=0.85,scale=2)
                     max_tokens = gr.Slider(maximum=8000,minimum=0,interactive=True,label="最大回复长度",step=50,value=1024,scale=2)
                     history_round = gr.Slider(maximum=30,minimum=1,interactive=True,label="携带上下文轮数",step=1,value=3,scale=2)
