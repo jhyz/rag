@@ -6,9 +6,10 @@ from langchain_community.llms.tongyi import Tongyi
 from langchain_community.embeddings.dashscope import DashScopeEmbeddings
 from openai import OpenAI  # 新增导入
 
-os.environ["DASHSCOPE_API_KEY"] = "sk-1a6a96ed75ad4bb0899ecec9b57863ba"
-os.environ["DEEPSEEK_API_KEY"] = "sk-d9fb1749f8d74ead813ffa116b0d8db2"  # 新增环境变量
-llm = Tongyi(model_name="deepseek-chat")
+
+os.environ["DASHSCOPE_API_KEY"] = "sk-"
+os.environ["DEEPSEEK_API_KEY"] = "sk-"  # 新增环境变量
+llm = Tongyi(model_name="qwen-turbo")
 embeddings=DashScopeEmbeddings()
 
 data_samples = {
