@@ -1,7 +1,6 @@
-Run: uvicorn main:app --port 7866
-# 本地RAG解决方案
+# RAG 本地问答系统
 
-这是一个基于LlamaIndex的本地RAG（检索增强生成）问答系统。
+这是一个基于LlamaIndex的本地RAG（检索增强生成）问答系统，作为毕业项目开发。
 
 ## 功能特性
 - 支持上传结构化和非结构化数据
@@ -25,7 +24,7 @@ pip install -r requirements.txt
 
 ## 运行项目
 ```bash
-python main.py
+uvicorn main:app --port 7866
 ```
 
 然后访问 http://127.0.0.1:7866
